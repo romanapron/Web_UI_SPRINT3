@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>I'am a big header!!!</h1>
+           <div id="myDiv">
+               <p class="paragraphs">First paragraph</p>
+               <p class="paragraphs">Second paragraph</p>
+               <p class="paragraphs">Third paragraph</p>
+               <p class="paragraphs">Fourth paragraph</p>
+           </div>
+           <ul id="myList">
+               <li>Make</li>
+               <li>me</li>
+               <li>horizontal!</li>
+           </ul>
+           <span>Make me invisible, please!</span>
+</body>
+<script>
+const mainH1 = document.querySelector('h1');
+mainH1.style.backgroundColor = 'lightgreen';
+mainH1.style.width='300px'
+const myDiv = document.querySelectorAll('#myDiv>.paragraphs');
+
+let first=myDiv[0].style.fontWeight='bold'
+let second=myDiv[1].style.color='red';
+let third=myDiv[2].style.textDecoration='underline';
+let fourth=myDiv[3].style.fontStyle='italic';
+ 
+const horizontal = document.querySelector('ul');
+horizontal.style.display='flex';
+horizontal.style.listStyleType='none';
+
+const unvisible=document.querySelector('span').style.visibility='hidden';
+
+
+
+</script>
+</html>
